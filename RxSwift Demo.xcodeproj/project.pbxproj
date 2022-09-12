@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		F668F6882747A517004214E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F6872747A517004214E1 /* AppDelegate.swift */; };
 		F668F68A2747A517004214E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F6892747A517004214E1 /* SceneDelegate.swift */; };
-		F668F68C2747A517004214E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F68B2747A517004214E1 /* ViewController.swift */; };
+		F668F68C2747A517004214E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F68B2747A517004214E1 /* LoginViewController.swift */; };
 		F668F68F2747A517004214E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F668F68D2747A517004214E1 /* Main.storyboard */; };
 		F668F6912747A51B004214E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F668F6902747A51B004214E1 /* Assets.xcassets */; };
 		F668F6942747A51B004214E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F668F6922747A51B004214E1 /* LaunchScreen.storyboard */; };
 		F668F69F2747A51B004214E1 /* RxSwift_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F69E2747A51B004214E1 /* RxSwift_DemoTests.swift */; };
 		F668F6A92747A51B004214E1 /* RxSwift_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F6A82747A51B004214E1 /* RxSwift_DemoUITests.swift */; };
 		F668F6AB2747A51B004214E1 /* RxSwift_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F6AA2747A51B004214E1 /* RxSwift_DemoUITestsLaunchTests.swift */; };
+		F6F783E02749FAEC00420F2C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F6F783DF2749FAEC00420F2C /* RxCocoa */; };
+		F6F783E22749FAEC00420F2C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6F783E12749FAEC00420F2C /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		F668F6842747A517004214E1 /* RxSwift Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F668F6872747A517004214E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F668F6892747A517004214E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F668F68B2747A517004214E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F668F68B2747A517004214E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F668F68E2747A517004214E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F668F6902747A51B004214E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F668F6932747A51B004214E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F783E22749FAEC00420F2C /* RxSwift in Frameworks */,
+				F6F783E02749FAEC00420F2C /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +105,7 @@
 			children = (
 				F668F6872747A517004214E1 /* AppDelegate.swift */,
 				F668F6892747A517004214E1 /* SceneDelegate.swift */,
-				F668F68B2747A517004214E1 /* ViewController.swift */,
+				F668F68B2747A517004214E1 /* LoginViewController.swift */,
 				F668F68D2747A517004214E1 /* Main.storyboard */,
 				F668F6902747A51B004214E1 /* Assets.xcassets */,
 				F668F6922747A51B004214E1 /* LaunchScreen.storyboard */,
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = "RxSwift Demo";
+			packageProductDependencies = (
+				F6F783DF2749FAEC00420F2C /* RxCocoa */,
+				F6F783E12749FAEC00420F2C /* RxSwift */,
+			);
 			productName = "RxSwift Demo";
 			productReference = F668F6842747A517004214E1 /* RxSwift Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = F668F67B2747A516004214E1;
+			packageReferences = (
+				F6F783DE2749FAEC00420F2C /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = F668F6852747A517004214E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F668F68C2747A517004214E1 /* ViewController.swift in Sources */,
+				F668F68C2747A517004214E1 /* LoginViewController.swift in Sources */,
 				F668F6882747A517004214E1 /* AppDelegate.swift in Sources */,
 				F668F68A2747A517004214E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -624,6 +635,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6F783DE2749FAEC00420F2C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6F783DF2749FAEC00420F2C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6F783DE2749FAEC00420F2C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F6F783E12749FAEC00420F2C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6F783DE2749FAEC00420F2C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F668F67C2747A516004214E1 /* Project object */;
 }
