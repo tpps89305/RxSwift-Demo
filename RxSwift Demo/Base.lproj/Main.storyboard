@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eVn-WS-ASB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eVn-WS-ASB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +14,7 @@
             <objects>
                 <navigationController id="eVn-WS-ASB" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oFM-iB-lsQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -34,14 +35,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" id="anl-xg-UzL" customClass="MenuCell" customModule="RxSwift_Demo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="anl-xg-UzL" id="g0I-qr-ncJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbf-rK-Sde">
-                                            <rect key="frame" x="20" y="11" width="374" height="21.5"/>
+                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -67,6 +68,7 @@
                     <navigationItem key="navigationItem" title="Menu" id="ygK-dE-QIh"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoLogin" id="4S5-em-wEb"/>
+                        <segue destination="eeN-JT-9tG" kind="show" identifier="gotoImagePicker" id="2zr-DA-Zv9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtS-3T-OuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KOn-Ep-2Fo">
-                                <rect key="frame" x="20" y="104" width="374" height="172"/>
+                                <rect key="frame" x="20" y="108" width="374" height="175.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R95-wB-bLe">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="54.5"/>
@@ -129,7 +131,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ma-Bi-ZNW">
-                                        <rect key="frame" x="0.0" y="141" width="374" height="31"/>
+                                        <rect key="frame" x="0.0" y="141" width="374" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                     </button>
@@ -157,6 +159,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="51" y="108"/>
+        </scene>
+        <!--Image Picker View Controller-->
+        <scene sceneID="TGh-uC-EyE">
+            <objects>
+                <viewController id="eeN-JT-9tG" customClass="ImagePickerViewController" customModule="RxSwift_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbY-Cb-gPi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SVM-v1-ZbW">
+                                <rect key="frame" x="20" y="112" width="374" height="280.5"/>
+                                <color key="backgroundColor" red="1" green="0.69411764710000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SVM-v1-ZbW" secondAttribute="height" multiplier="4:3" id="hfz-ec-wAF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRJ-dg-Ax9">
+                                <rect key="frame" x="177.5" y="412.5" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="相機"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYQ-LM-ezi">
+                                <rect key="frame" x="177.5" y="467.5" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="相簿"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrb-tB-wUV">
+                                <rect key="frame" x="177.5" y="522.5" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="剪裁"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lne-OY-CQv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lne-OY-CQv" firstAttribute="trailing" secondItem="SVM-v1-ZbW" secondAttribute="trailing" constant="20" id="3XK-5D-vw0"/>
+                            <constraint firstItem="dYQ-LM-ezi" firstAttribute="centerX" secondItem="cbY-Cb-gPi" secondAttribute="centerX" id="7eJ-QC-c8Z"/>
+                            <constraint firstItem="SVM-v1-ZbW" firstAttribute="top" secondItem="Lne-OY-CQv" secondAttribute="top" constant="20" id="8Li-57-B4g"/>
+                            <constraint firstItem="GRJ-dg-Ax9" firstAttribute="top" secondItem="SVM-v1-ZbW" secondAttribute="bottom" constant="20" id="Gnm-NI-4fM"/>
+                            <constraint firstItem="GRJ-dg-Ax9" firstAttribute="centerX" secondItem="cbY-Cb-gPi" secondAttribute="centerX" id="Gyv-Q0-QUI"/>
+                            <constraint firstItem="mrb-tB-wUV" firstAttribute="top" secondItem="dYQ-LM-ezi" secondAttribute="bottom" constant="20" id="Iq0-ef-jCl"/>
+                            <constraint firstItem="dYQ-LM-ezi" firstAttribute="top" secondItem="GRJ-dg-Ax9" secondAttribute="bottom" constant="20" id="LgS-p4-VIc"/>
+                            <constraint firstItem="SVM-v1-ZbW" firstAttribute="leading" secondItem="Lne-OY-CQv" secondAttribute="leading" constant="20" id="kZx-7j-EgC"/>
+                            <constraint firstItem="mrb-tB-wUV" firstAttribute="centerX" secondItem="cbY-Cb-gPi" secondAttribute="centerX" id="z5Y-cP-Gly"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2A5-m8-Y1r"/>
+                    <connections>
+                        <outlet property="buttonCamera" destination="GRJ-dg-Ax9" id="lL3-gu-Exw"/>
+                        <outlet property="buttonCrop" destination="mrb-tB-wUV" id="Uaz-wc-zes"/>
+                        <outlet property="buttonGallery" destination="dYQ-LM-ezi" id="txh-0j-9Tk"/>
+                        <outlet property="imageView" destination="SVM-v1-ZbW" id="eV8-rh-wFO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fae-2I-d6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="792"/>
         </scene>
     </scenes>
     <resources>

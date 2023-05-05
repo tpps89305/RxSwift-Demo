@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F61B7DD628CF8AC800D30E29 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B7DD528CF8AC800D30E29 /* MenuViewController.swift */; };
 		F61B7DD828CF8C4C00D30E29 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B7DD728CF8C4C00D30E29 /* MenuCell.swift */; };
+		F639C56D2A04D813001D17BE /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C56C2A04D813001D17BE /* UIImagePickerController+RxCreate.swift */; };
+		F639C56F2A04D834001D17BE /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C56E2A04D834001D17BE /* UIImagePickerController+Rx.swift */; };
+		F639C5712A04EF61001D17BE /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639C5702A04EF61001D17BE /* RxImagePickerDelegateProxy.swift */; };
+		F64A78062A03B0F10011FFDC /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64A78052A03B0F10011FFDC /* ImagePickerViewController.swift */; };
 		F668F6882747A517004214E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F6872747A517004214E1 /* AppDelegate.swift */; };
 		F668F68A2747A517004214E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F6892747A517004214E1 /* SceneDelegate.swift */; };
 		F668F68C2747A517004214E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668F68B2747A517004214E1 /* LoginViewController.swift */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		F61B7DD528CF8AC800D30E29 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F61B7DD728CF8C4C00D30E29 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		F639C56C2A04D813001D17BE /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
+		F639C56E2A04D834001D17BE /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		F639C5702A04EF61001D17BE /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		F64A78052A03B0F10011FFDC /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		F668F6842747A517004214E1 /* RxSwift Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F668F6872747A517004214E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F668F6892747A517004214E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		F668F6862747A517004214E1 /* RxSwift Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F639C5702A04EF61001D17BE /* RxImagePickerDelegateProxy.swift */,
 				F668F6872747A517004214E1 /* AppDelegate.swift */,
 				F668F6892747A517004214E1 /* SceneDelegate.swift */,
 				F668F68B2747A517004214E1 /* LoginViewController.swift */,
@@ -116,6 +125,9 @@
 				F668F6922747A51B004214E1 /* LaunchScreen.storyboard */,
 				F668F6952747A51B004214E1 /* Info.plist */,
 				F61B7DD528CF8AC800D30E29 /* MenuViewController.swift */,
+				F64A78052A03B0F10011FFDC /* ImagePickerViewController.swift */,
+				F639C56C2A04D813001D17BE /* UIImagePickerController+RxCreate.swift */,
+				F639C56E2A04D834001D17BE /* UIImagePickerController+Rx.swift */,
 			);
 			path = "RxSwift Demo";
 			sourceTree = "<group>";
@@ -275,10 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F639C5712A04EF61001D17BE /* RxImagePickerDelegateProxy.swift in Sources */,
+				F64A78062A03B0F10011FFDC /* ImagePickerViewController.swift in Sources */,
 				F668F68C2747A517004214E1 /* LoginViewController.swift in Sources */,
 				F61B7DD828CF8C4C00D30E29 /* MenuCell.swift in Sources */,
 				F668F6882747A517004214E1 /* AppDelegate.swift in Sources */,
 				F668F68A2747A517004214E1 /* SceneDelegate.swift in Sources */,
+				F639C56D2A04D813001D17BE /* UIImagePickerController+RxCreate.swift in Sources */,
+				F639C56F2A04D834001D17BE /* UIImagePickerController+Rx.swift in Sources */,
 				F61B7DD628CF8AC800D30E29 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

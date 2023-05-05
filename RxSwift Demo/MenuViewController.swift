@@ -26,6 +26,8 @@ class ManuViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             self.performSegue(withIdentifier: "gotoLogin", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "gotoImagePicker", sender: nil)
         default:
             NSLog("Cannot found page with index = %d", indexPath.row)
         }
